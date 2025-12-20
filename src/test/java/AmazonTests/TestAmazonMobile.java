@@ -1,0 +1,5 @@
+package AmazonTests;
+
+class TestAmazonMobile {
+
+}
