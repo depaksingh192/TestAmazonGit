@@ -1,5 +1,5 @@
 package AmazonTests;
-import com.github.javafaker.Faker;
+
 public class TestCoding {
 
 	public static void main(String[] args) {
@@ -20,15 +20,7 @@ public class TestCoding {
 
 //       System.out.println("test");
 		
-		
-	        Faker faker = new Faker();
-
-	        String name = faker.name().fullName(); // Generates a random full name
-	        String address = faker.address().streetAddress(); // Generates a random street address
-
-	        System.out.println("Name: " + name);
-	        System.out.println("Address: " + address);
-
+	
 	}
 
 }
