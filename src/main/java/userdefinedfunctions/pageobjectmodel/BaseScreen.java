@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -32,24 +33,51 @@ public class BaseScreen implements WebActivity, PageActions {
     
     public Actions actions;
 
+   
+   
+    
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private WebDriverWait wait;
+
+    public WebDriver getDriver() {
+        return driver.get();
+    }
     
 
-	@Override
-	public WebDriver getDriver() {
-		// TODO Auto-generated method stub
-		return PageActions.super.getDriver();
-	}
+    public void setUpDriver() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver.exe");
+        driver.set(new ChromeDriver());
+//        wait = new WebDriverWait(BaseScreen.getDriver(), 20);
+    	
+    	
+        getDriver().manage().window().maximize();
+    }
+
+    public void tearDownDriver() {
+        if (getDriver() != null) {
+            getDriver().quit();
+            driver.remove();
+        }
+    }
+//	@Override
+//	public WebDriver getDriver() {
+//		// TODO Auto-generated method stub
+//		return PageActions.super.getDriver();
+//	}
 
 	// Maximize the browser
     @Override
     public void maximizeBrowser() {
         getDriver().manage().window().maximize();
-    }
+        
+        
+     }
     
     // Minimize the browser
     @Override
     public void minimizeBrowser() {
         getDriver().manage().window().minimize();
+       
     }
     
     @Override
@@ -57,19 +85,26 @@ public class BaseScreen implements WebActivity, PageActions {
     	
     	// Set the position of the window
     	getDriver().manage().window().setPosition(new Point(x,y));
-    	
+	
     }
+    
     
     //set Fullscreen
     @Override
     public void setWindowFull() {
+    	
     	getDriver().manage().window().fullscreen();
+    	
     }
+    
 
     //Forward navigation
     @Override
     public void navigateForward() {
-        getDriver().navigate().forward();
+    	
+         getDriver().navigate().forward();
+         
+       
     }
     
    
@@ -78,16 +113,21 @@ public class BaseScreen implements WebActivity, PageActions {
     @Override
     public void navigateBackward() {
         getDriver().navigate().back();
+        
     }
     
     public void refreshPage() {
     	
+    	getDriver().navigate().refresh();
+    	
     }
+    
     
     public void navigateToUrl(String url) {
     	getDriver().navigate().to(url);
     }
 
+    
     
     //Navigate to a URL in a new tab
     @Override
@@ -100,6 +140,7 @@ public class BaseScreen implements WebActivity, PageActions {
         }
     }
 
+    
    //Navigate to a URL in a new window
     @Override
     public void switchToAnotherWindow() {
@@ -108,6 +149,7 @@ public class BaseScreen implements WebActivity, PageActions {
         }
     }
 
+    
     //Switches to each frame in the provided list of frames and then switches back to the default content
     @Override
     public void handleFrames(List<WebElement> framesid) {

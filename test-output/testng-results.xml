@@ -1,49 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-20T18:18:59 IST" name="Default suite" finished-at="2025-12-20T18:19:12 IST" duration-ms="13465">
+  <suite started-at="2026-01-03T14:50:52 IST" name="Default suite" finished-at="2026-01-03T14:51:27 IST" duration-ms="35090">
     <groups>
+      <group name="MobileSearch">
+        <method signature="TestAmazonMobile.seeAllMobile()[pri:4, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" name="seeAllMobile" class="AmazonTests.TestAmazonMobile"/>
+      </group> <!-- MobileSearch -->
+      <group name="Mobiles">
+        <method signature="TestAmazonMobile.clickAndOpenMobile()[pri:1, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" name="clickAndOpenMobile" class="AmazonTests.TestAmazonMobile"/>
+        <method signature="TestAmazonMobile.filterNewMobileAndRange()[pri:2, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" name="filterNewMobileAndRange" class="AmazonTests.TestAmazonMobile"/>
+        <method signature="TestAmazonMobile.hoverMobileTab()[pri:3, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" name="hoverMobileTab" class="AmazonTests.TestAmazonMobile"/>
+        <method signature="TestAmazonMobile.seeAllMobile()[pri:4, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" name="seeAllMobile" class="AmazonTests.TestAmazonMobile"/>
+      </group> <!-- Mobiles -->
     </groups>
-    <test started-at="2025-12-20T18:18:59 IST" name="Default test" finished-at="2025-12-20T18:19:12 IST" duration-ms="13465">
-      <class name="AmazonTests.TestAmazonHome">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:18:59 IST" name="setUp" finished-at="2025-12-20T18:18:59 IST" duration-ms="20" status="PASS">
+    <test started-at="2026-01-03T14:50:52 IST" name="Default test" finished-at="2026-01-03T14:51:27 IST" duration-ms="35090">
+      <class name="AmazonTests.TestAmazonMobile">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:50:52 IST" name="setUp" finished-at="2026-01-03T14:50:58 IST" duration-ms="6303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchAmazon()[pri:1, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:18:59 IST" name="launchAmazon" finished-at="2025-12-20T18:19:11 IST" duration-ms="12151" status="PASS">
+        <test-method signature="clickAndOpenMobile()[pri:1, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:50:58 IST" name="clickAndOpenMobile" finished-at="2026-01-03T14:51:11 IST" duration-ms="12431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchAmazon -->
-        <test-method signature="assertTitle()[pri:2, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="assertTitle" finished-at="2025-12-20T18:19:11 IST" duration-ms="221" status="PASS">
+        </test-method> <!-- clickAndOpenMobile -->
+        <test-method signature="filterNewMobileAndRange()[pri:2, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:51:11 IST" name="filterNewMobileAndRange" finished-at="2026-01-03T14:51:15 IST" duration-ms="3874" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertTitle -->
-        <test-method signature="validateCarsBikesLink()[pri:3, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="validateCarsBikesLink" finished-at="2025-12-20T18:19:11 IST" duration-ms="79" status="PASS">
+        </test-method> <!-- filterNewMobileAndRange -->
+        <test-method signature="hoverMobileTab()[pri:3, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:51:16 IST" name="hoverMobileTab" finished-at="2026-01-03T14:51:19 IST" duration-ms="3632" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCarsBikesLink -->
-        <test-method signature="validatechangeLanguage()[pri:4, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="validatechangeLanguage" finished-at="2025-12-20T18:19:11 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- hoverMobileTab -->
+        <test-method signature="hoverMobileTab()[pri:3, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:51:20 IST" name="hoverMobileTab" finished-at="2026-01-03T14:51:23 IST" duration-ms="2676" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatechangeLanguage -->
-        <test-method signature="validateSearch()[pri:5, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="validateSearch" finished-at="2025-12-20T18:19:11 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- hoverMobileTab -->
+        <test-method signature="seeAllMobile()[pri:4, instance:AmazonTests.TestAmazonMobile@ba2f4ec]" started-at="2026-01-03T14:51:23 IST" name="seeAllMobile" finished-at="2026-01-03T14:51:27 IST" duration-ms="3414" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSearch -->
-        <test-method signature="validateTopContainer()[pri:6, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="validateTopContainer" finished-at="2025-12-20T18:19:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTopContainer -->
-        <test-method signature="validateBottomCarousel()[pri:7, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="validateBottomCarousel" finished-at="2025-12-20T18:19:11 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateBottomCarousel -->
-        <test-method is-config="true" signature="quitAmazon()[pri:0, instance:AmazonTests.TestAmazonHome@367ffa75]" started-at="2025-12-20T18:19:11 IST" name="quitAmazon" finished-at="2025-12-20T18:19:12 IST" duration-ms="887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAmazon -->
-      </class> <!-- AmazonTests.TestAmazonHome -->
+        </test-method> <!-- seeAllMobile -->
+      </class> <!-- AmazonTests.TestAmazonMobile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

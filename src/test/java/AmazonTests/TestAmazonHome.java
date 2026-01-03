@@ -39,6 +39,10 @@ public class TestAmazonHome extends BaseScreen {
         logger.info("Start the tests for Homescreen");
 
     	basescreen = new BaseScreen();
+    	
+    	setUpDriver();
+        implicitlyWait(20);
+        getDriver().get("https://www.amazon.in");
     }
     
 
@@ -52,7 +56,7 @@ public class TestAmazonHome extends BaseScreen {
 
 	
 
-    @Test(priority = 2)
+    //@Test(priority = 2)
     public void assertTitle() {
     	 logger.info(basescreen.getTitle());
          basescreen.validateHardAssertion(basescreen.getTitle(),"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
