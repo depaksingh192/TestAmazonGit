@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="tests" name="Failed suite [AmazonTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="TestAmazonMobile1(failed)">
+  <test thread-count="1" parallel="tests" name="TestAmazonMobile(failed)">
+    <parameter name="zipcode" value="110080"/>
     <classes>
       <class name="AmazonTests.TestAmazonMobile">
         <methods>
-          <include name="hoverMobileTab"/>
-          <include name="filterNewMobileAndRange"/>
-          <include name="tearDown"/>
+          <include name="enterZipCode" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- AmazonTests.TestAmazonMobile -->
     </classes>
-  </test> <!-- TestAmazonMobile1(failed) -->
+  </test> <!-- TestAmazonMobile(failed) -->
 </suite> <!-- Failed suite [AmazonTestSuite] -->

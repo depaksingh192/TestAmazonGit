@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 03 14:50:52 IST 2026</td>
+<td>Started on:</td><td>Mon Jan 05 02:08:28 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35090 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5980 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,30 +76,61 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='AmazonTests.TestAmazonMobile.hoverMobileTab()'><b>hoverMobileTab</b><br>Test class: AmazonTests.TestAmazonMobile</td>
-<td></td>
-<td>2</td>
-<td>AmazonTests.TestAmazonMobile@ba2f4ec</td></tr>
-<tr>
-<td title='AmazonTests.TestAmazonMobile.clickAndOpenMobile()'><b>clickAndOpenMobile</b><br>Test class: AmazonTests.TestAmazonMobile</td>
-<td></td>
-<td>12</td>
-<td>AmazonTests.TestAmazonMobile@ba2f4ec</td></tr>
-<tr>
-<td title='AmazonTests.TestAmazonMobile.seeAllMobile()'><b>seeAllMobile</b><br>Test class: AmazonTests.TestAmazonMobile</td>
-<td></td>
-<td>3</td>
-<td>AmazonTests.TestAmazonMobile@ba2f4ec</td></tr>
-<tr>
-<td title='AmazonTests.TestAmazonMobile.filterNewMobileAndRange()'><b>filterNewMobileAndRange</b><br>Test class: AmazonTests.TestAmazonMobile</td>
-<td></td>
-<td>3</td>
-<td>AmazonTests.TestAmazonMobile@ba2f4ec</td></tr>
-<tr>
-<td title='AmazonTests.TestAmazonMobile.hoverMobileTab()'><b>hoverMobileTab</b><br>Test class: AmazonTests.TestAmazonMobile</td>
-<td></td>
-<td>3</td>
-<td>AmazonTests.TestAmazonMobile@ba2f4ec</td></tr>
+<td title='cucumberrunner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberrunner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mobile Screen Test for Amazon", "Amazon Mobile Page Exploratory Test Case"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User launches amazon and clicks on Mobile Tab&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User launches amazon and clicks on Mobile Tab&quot;)
+public void user_launches_amazon_and_clicks_on_mobile_tab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;User filters New Mobile and range&quot;)
+public void user_filters_new_mobile_and_range() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User hovers over Mobile Tab and navigate to Link&quot;)
+public void user_hovers_over_mobile_tab_and_navigate_to_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User clicks on see all Mobiles&quot;)
+public void user_clicks_on_see_all_mobiles() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User launches amazon and clicks on Mobile Tab(file:///C:/Users/j712/eclipse-workspace/com.AmazonTests/src/test/resources/featurefiles/Exploratory/AmazonMobile.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace819092483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace819092483'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User launches amazon and clicks on Mobile Tab&apos; and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User launches amazon and clicks on Mobile Tab&quot;)
+public void user_launches_amazon_and_clicks_on_mobile_tab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;User filters New Mobile and range&quot;)
+public void user_filters_new_mobile_and_range() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User hovers over Mobile Tab and navigate to Link&quot;)
+public void user_hovers_over_mobile_tab_and_navigate_to_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User clicks on see all Mobiles&quot;)
+public void user_clicks_on_see_all_mobiles() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User launches amazon and clicks on Mobile Tab(file:///C:/Users/j712/eclipse-workspace/com.AmazonTests/src/test/resources/featurefiles/Exploratory/AmazonMobile.feature:10)
+</pre></div></td>
+<td>4</td>
+<td>cucumberrunner.TestNGRunner@42f33b5d</td></tr>
 </table><p>
 </body>
 </html>

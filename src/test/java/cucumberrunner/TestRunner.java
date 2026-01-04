@@ -7,8 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/featurefiles", // Path to the feature files
-    glue = {"userdefinedfunctions.stepdefinitions.AmazonHome", "cucumberrunner"}, // Path to the step definitions
-    tags = "@amazon and @web", // Tags to filter scenarios
+    glue = {"userdefinedfunctions.stepdefinitions"}, // Path to the step definitions
+    tags = "@web and @amazon and @mobiles", // Tags to filter scenarios
     plugin = {
         "pretty", // Prints Gherkin steps in the console
         "html:target/cucumber-reports.html", // Generates an HTML report
@@ -16,7 +16,5 @@ import io.cucumber.junit.CucumberOptions;
     },
     monochrome = true // Makes console output more readable
 )
-
 public class TestRunner {
-
 }

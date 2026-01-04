@@ -1,12 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>AmazonTests</groupId>
-  <artifactId>com.AmazonTests</artifactId>
+  <groupId>com.TestAmazonNewProject</groupId>
+  <artifactId>TestAmazonNewProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Project Test</name>
-
-
-  <dependencies>
+  
+    <dependencies>
     <!-- Cucumber -->
     <dependency>
       <groupId>io.cucumber</groupId>
@@ -29,20 +27,33 @@
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-testng</artifactId>
-      <version>7.0.0</version>
+      <version>7.29.0</version>
     </dependency>
 
-
+    <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-slf4j-impl</artifactId>
+    <version>2.20.0</version>
+	</dependency>
+	
+	
+	<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>2.0.17</version>
+	</dependency>
 
 	
 	 
     <!-- TestNG -->
     <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.7.0</version>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.1</version>
     
-    </dependency>
+	</dependency>
+    
+    
 
 
 
@@ -138,24 +149,10 @@
 
     
   </dependencies>
-  
-  
-  
-  <build>
-    <plugins>
-        <!-- Maven Compiler Plugin -->
-        <plugin>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version> <!-- Use a compatible version -->
-            <configuration>
-                <source>8</source> <!-- Set the Java source version -->
-                <target>8</target> <!-- Set the Java target version -->
-            </configuration>
-        </plugin>
+   
+   
 
-      
-    </plugins>
-</build>
+
 
 
 </project>
